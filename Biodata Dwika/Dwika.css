@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Gambar/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.biodata-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.biodata-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgb(255, 255, 255);
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.foto-profil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.identitas {
+    flex: 1;
+}
+
+.identitas h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.identitas p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.identitas a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.identitas a:hover {
+    text-decoration: underline;
+}
+
+.pendidikan, .skill, .hobi, .portofolio {
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.portofolio a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.portofolio a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .biodata-container {
+        padding: 15px;
+    }
+
+    .foto-profil {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 10px auto;
+    }
+
+    .identitas h2 {
+        font-size: 18px;
+    }
+
+    .identitas p {
+        font-size: 13px;
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .biodata-container {
+        padding: 15px;
+    }
+
+    .profil {
+        flex-direction: column;
+    }
+
+    .foto-profil {
+        margin: 0 0 15px 0;
+    }
+
+    .identitas h2 {
+        font-size: 16px;
+    }
+
+    .identitas p,
+    ul li {
+        font-size: 12px;
+    }
+}
